@@ -136,4 +136,9 @@ class Product
 
         return $this;
     }
+
+    public function getProductFullName(): ?string
+    {
+        return $this->getName().' - '.$this->getInfo();
+    }
 }
